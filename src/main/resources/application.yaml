@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/blogger
+    username: postgres
+    password: postgres
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+blogger:
+  app:
+    jwtSecret: bloggerSecretKey
+    jwtExpirationMs: 86400000
